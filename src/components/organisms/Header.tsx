@@ -10,16 +10,20 @@ const Header = () => {
         >
             <div>
                 <a href="https://github.com/joelsellgren">
-                    <img src={GithubLogo} alt="" />
+                    <img
+                        className="hover:invert duration-100"
+                        src={GithubLogo}
+                        alt=""
+                    />
                 </a>
             </div>
             <div>
                 <a href="https://.linkedin.com/in/joel-sellgren-85086a265/">
-                    <img className="" src={LinkedinLogo} alt="" />
+                    <img className="fill-[#243c5a]" src={LinkedinLogo} alt="" />
                 </a>
             </div>
             <div>
-                <img src={EmailLogo} alt="" />
+                <img className="fill-[#243c5a]" src={EmailLogo} alt="" />
             </div>
         </div>
     );
