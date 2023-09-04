@@ -1,3 +1,5 @@
+import Button from '../molecules/Button';
+
 const Hero = () => {
     return (
         <div className="flex flex-row items-center">
@@ -10,13 +12,15 @@ const Hero = () => {
                     I'm a developer based in Stockholm, specialized in
                     blablabla........
                 </p>
-                <button className="w-48 h-8 mt-2 bg-cyan-900 rounded-lg">
-                    Tell me more...
-                </button>
+                <Button
+                    text="Tell me more..."
+                    color="bg-green-800"
+                    hover="hover:bg-green-600"
+                />
             </div>
             <img
                 className="rounded-lg w-96 h-auto"
-                src="./../../../public/Profile.png"
+                src="./Profile.png"
                 alt=""
             />
         </div>
