@@ -5,7 +5,7 @@ const Header = () => {
          justify-between items-center"
         >
             <a
-                className="w-[40px] h-[40px] hover:scale-125 duration-100"
+                className="w-[40px] h-[40px] mt-2 hover:scale-125 duration-100"
                 href="https://github.com/joelsellgren"
             >
                 <svg
@@ -31,7 +31,7 @@ const Header = () => {
                 </svg>
             </a>
             <a
-                className="w-[40px] h-[40px] hover:scale-125 duration-100"
+                className="w-[40px] h-[40px] hover:scale-125 duration-100 mb-2"
                 href="mailto:joel.sellgren@hotmail.com"
             >
                 <svg
