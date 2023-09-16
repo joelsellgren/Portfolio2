@@ -1,12 +1,14 @@
-import Header from './components/organisms/Header';
-import Hero from './components/organisms/Hero';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <div className="flex flex-row justify-between items-center">
-            <Header />
-            <Hero />
-            <div></div>
+        <div className="flex items-center">
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
         </div>
     );
 }

@@ -44,7 +44,7 @@ const Header = () => {
                     <path
                         d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
                         stroke="#000000"
-                        stroke-width="2"
+                        strokeWidth="2"
                     />
                     <rect
                         x="3"
@@ -53,8 +53,8 @@ const Header = () => {
                         height="14"
                         rx="2"
                         stroke="#000000"
-                        stroke-width="2"
-                        stroke-linecap="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                     />
                 </svg>
             </a>
