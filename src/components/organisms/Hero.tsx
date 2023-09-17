@@ -1,4 +1,5 @@
 import Button from '../molecules/Button';
+import Picture from '../molecules/Picture';
 
 const Hero = () => {
     return (
@@ -18,11 +19,7 @@ const Hero = () => {
                     hover="hover:bg-green-600"
                 />
             </div>
-            <img
-                className="rounded-lg w-96 h-auto"
-                src="./Profile.png"
-                alt="Picture of Joel, altered with AI to look like an oil painting"
-            />
+            <Picture />
         </div>
     );
 };
