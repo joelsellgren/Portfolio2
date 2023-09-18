@@ -7,6 +7,7 @@ const Header = () => {
             <a
                 className="w-[40px] h-[40px] mt-2 hover:scale-125 duration-100"
                 href="https://github.com/joelsellgren"
+                target="_blank"
             >
                 <svg
                     width="100%"
@@ -20,6 +21,7 @@ const Header = () => {
             <a
                 className="w-[40px] h-[40px] hover:scale-125 duration-100"
                 href="https://www.linkedin.com/in/joel-sellgren-85086a265/"
+                target="_blank"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +35,7 @@ const Header = () => {
             <a
                 className="w-[40px] h-[40px] hover:scale-125 duration-100 mb-2"
                 href="mailto:joel.sellgren@hotmail.com"
+                target="_blank"
             >
                 <svg
                     width="100%"
