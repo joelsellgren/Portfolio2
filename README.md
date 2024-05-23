@@ -1,3 +1,3 @@
 # Portfolio
 
-Made in TypeScript and React
+Made in TypeScript, React and Tailwind

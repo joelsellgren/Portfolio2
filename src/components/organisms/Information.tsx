@@ -1,10 +1,6 @@
 import Picture from '../molecules/Picture';
-function Information() {
-    return (
-        <div>
-            <Picture />
-        </div>
-    );
-}
+const Information = () => {
+  return <Picture />;
+};
 
 export default Information;
