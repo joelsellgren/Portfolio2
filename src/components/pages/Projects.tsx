@@ -1,13 +1,13 @@
-import Hero from '../organisms/Hero';
+import Information from '../organisms/Information';
 import Header from '../organisms/Header';
 
-const Home = () => {
+const Projects = () => {
   return (
     <article className="flex flex-col w-screen h-screen">
       <Header />
-      <Hero />
+      <Information />
     </article>
   );
 };
 
-export default Home;
+export default Projects;

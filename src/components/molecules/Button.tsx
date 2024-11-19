@@ -1,16 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 
-type Props = {
+interface IButtonProps {
   text: string;
   color: string;
   hover: string;
-};
+  route: string;
+}
 
-const Button = ({ text, color, hover }: Props) => {
+const Button = ({ text, color, hover, route }: IButtonProps) => {
   const navigate = useNavigate();
-  const handleClick = () => navigate('/about');
+  const handleClick = () => navigate(route);
   return (
-    <button className={`w-48 h-9 mt-2 ${color} ${hover} text-white duration-100 rounded-lg`} onClick={handleClick}>
+    <button
+      className={`w-48 h-9 mt-2 ${color} ${hover} text-white duration-100 rounded-lg`}
+      onClick={handleClick}
+    >
       {text}
     </button>
   );

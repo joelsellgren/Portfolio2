@@ -3,11 +3,10 @@ import Information from '../organisms/Information';
 
 const About = () => {
   return (
-    <div className="flex justify-between items-center w-full">
+    <article className="flex flex-col w-screen h-screen">
       <Header />
       <Information />
-      <div></div>
-    </div>
+    </article>
   );
 };
 
