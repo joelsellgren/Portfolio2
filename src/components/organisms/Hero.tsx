@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
         <p className=" text-lg text-white">
           Creative <span className="font-bold">developer</span> with a
-          background in music.
+          background in music. Based in Stockholm.
         </p>
         <Button
           text="Tell me more!"
@@ -24,7 +24,7 @@ const Hero = () => {
         <Button
           text="Projects"
           color="bg-red-400"
-          hover="hover:bg-green-600 duration-150"
+          hover="hover:bg-red-600 duration-150"
           route="/projects"
         />
       </div>
