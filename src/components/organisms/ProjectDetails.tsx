@@ -1,10 +1,20 @@
+import { useEffect, useState } from 'react';
+import ProjectCard from '../molecules/ProjectCard';
+
 const ProjectDetails = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsVisible(true), 100);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
-    <section className="flex flex-row items-center justify-center h-screen">
-      <div className="text-white">1</div>
-      <div className="text-white">2</div>
-      <div className="text-white">3</div>
-    </section>
+    <article
+      className={`flex flex-row items-center justify-center h-screen  transform transition-all duration-1000 ease-in ${isVisible ? 'opacity-100' : 'opacity-0 '}`}
+    >
+      <ProjectCard />
+    </article>
   );
 };
 
