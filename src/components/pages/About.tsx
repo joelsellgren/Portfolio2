@@ -6,7 +6,7 @@ const About = () => {
     <article className="flex flex-col w-screen h-screen">
       <div className="flex flex-row justify-center items-center h-full">
         <Information />
-        <Picture />
+        <Picture shouldEaseIn={false} />
       </div>
     </article>
   );

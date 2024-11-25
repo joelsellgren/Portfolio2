@@ -51,9 +51,12 @@ const ProjectCard = () => {
   return (
     <>
       <article className="grid grid-cols-3 gap-10 mt-8">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <section className="w-72 h-80 rounded-2xl p-2 flex flex-col justify-around items-center bg-white hover:scale-110 duration-100 ">
+            <section
+              key={index}
+              className="w-72 h-80 rounded-2xl p-2 flex flex-col justify-around items-center bg-white hover:scale-110 duration-100 "
+            >
               <h1>{project.name}</h1>
               <h1>{project.desc}</h1>
               <h1>{project.year}</h1>

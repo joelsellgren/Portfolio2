@@ -11,12 +11,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <article className={'flex flex-row items-center justify-center h-full'}>
-      <div
-        className={`w-96 h-72 p-4 flex flex-col justify-evenly transform transition-all duration-1000 ease-out ${
-          isVisible ? 'opacity-100' : 'opacity-0 '
-        }`}
-      >
+    <article
+      className={`flex flex-row items-center justify-center h-full transform transition-all duration-1000 ease-out ${
+        isVisible ? 'opacity-100' : 'opacity-0 '
+      } `}
+    >
+      <div className={`w-96 h-72 p-4 flex flex-col justify-evenly `}>
         <div>
           <h1 className="font-bold text-5xl text-cyan-700">Joel Sellgren</h1>
           <h2 className="font-bold text-4xl text-cyan-700">

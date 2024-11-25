@@ -7,7 +7,8 @@ import emailLogo from '/email-svgrepo-com.svg';
 const Header = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/');
+    const timeout = setTimeout(() => navigate('/'), 100);
+    return () => clearTimeout(timeout);
   };
   return (
     <header className="w-screen flex justify-between absolute z-10">
