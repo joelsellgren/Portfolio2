@@ -1,4 +1,3 @@
-import Picture from '../molecules/Picture';
 import Button from '../molecules/Button';
 import { useState, useEffect } from 'react';
 
@@ -34,7 +33,6 @@ const Information = () => {
           route="/projects"
         />
       </div>
-      <Picture />
     </div>
   );
 };

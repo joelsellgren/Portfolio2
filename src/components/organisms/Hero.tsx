@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Button from '../molecules/Button';
-import Picture from '../molecules/Picture';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,7 +40,6 @@ const Hero = () => {
           route="/projects"
         />
       </div>
-      <Picture />
     </article>
   );
 };

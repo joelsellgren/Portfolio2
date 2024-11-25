@@ -1,10 +1,13 @@
-import Header from '../organisms/Header';
 import Information from '../organisms/Information';
+import Picture from '../molecules/Picture';
 
 const About = () => {
   return (
     <article className="flex flex-col w-screen h-screen">
-      <Information />
+      <div className="flex flex-row justify-center items-center h-full">
+        <Information />
+        <Picture />
+      </div>
     </article>
   );
 };
