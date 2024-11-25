@@ -22,13 +22,13 @@ const ProjectCard = () => {
       googlestoreLink: '',
     },
     {
-      name: 'lorem',
-      desc: 'lorem',
-      year: 'lorem',
+      name: 'Recipe Assistant App',
+      desc: 'A fullstack project using TypeScript, Vue.js, PostgreSQL, Prisma and ChatGPT:s API to create a chat-bot that helped the user create recipes based on the ingredients they have at home.',
+      year: '2023',
     },
     {
-      name: 'lorem',
-      desc: 'lorem',
+      name: 'Green Hero',
+      desc: 'This project got 3rd place in Chas Academy:s Chas Challenge, the teams were assigned to create an app based on the theme Environment. The project was done using TypeScript, React, express.js and mongoDB.',
       year: 'lorem',
     },
     {

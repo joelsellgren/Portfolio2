@@ -4,9 +4,7 @@ import { useRouteContext } from '../../Contexts/RouteContext';
 
 const Home = () => {
   const { previousRoute } = useRouteContext();
-  console.log('====================================');
-  console.log(previousRoute);
-  console.log('====================================');
+  // TODO: Fixa  variabelnamnet på shouldEaseIn.....
   const shouldEaseIn = previousRoute === '/about';
   return (
     <article className="flex flex-col w-screen h-screen">
