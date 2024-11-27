@@ -21,10 +21,16 @@ const Information = () => {
           </h2>
         </div>
         <p className=" text-lg text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quam
-          reprehenderit sapiente eveniet quidem tempora consequatur quod, sequi
-          maxime cumque esse ad eius tenetur eaque nihil odio officia aliquid?
-          Expedita.
+          Drummer turned developer. I have a Bachelors of Fine Arts from the
+          Royal College of music in Stockholm. Sometime along my music studies,
+          I realised that lifestyle wasn't for me, though I still love music. I
+          also spend some of my free time in the drum-shed :). After a year of
+          trying the freelance life, I decided to study a vocational program to
+          become a Fullstack Developer, and now work at Staccs, where I mainly
+          develop the app{' '}
+          <a href="">
+            <span className="font-bold">Tevefy</span>.
+          </a>
         </p>
         <Button
           text="Projects"

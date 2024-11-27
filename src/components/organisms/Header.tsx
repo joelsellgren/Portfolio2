@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-
 import githubLogo from '/github-mark.svg';
 import linkedinLogo from '/icons8-linkedin.svg';
 import emailLogo from '/email-svgrepo-com.svg';
@@ -14,10 +13,10 @@ const Header = () => {
     <header className="w-screen flex justify-between absolute z-10">
       <button
         className="w-20 h-20 flex 
-         justify-around items-center  bg-slate-500 rounded-lg m-4"
+         justify-around items-center  bg-slate-500 rounded-full m-4 text-2xl font-bold font-mono hover:scale-110 duration-100"
         onClick={handleClick}
       >
-        JS
+        <p>JS</p>
       </button>
       <section
         className="w-52 h-20 flex 
