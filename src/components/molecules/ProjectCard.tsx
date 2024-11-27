@@ -82,14 +82,14 @@ const ProjectCard = () => {
           return (
             <section
               key={index}
-              className="w-72 h-80 rounded-2xl p-4 flex flex-col justify-around items-center bg-white hover:scale-110 duration-100 "
+              className="w-72 h-80 rounded-2xl p-4 flex flex-col justify-around items-center bg-white  " // hover:scale-110 duration-100
             >
               <h2 className="text-lg font-bold">{project.name}</h2>
               <p>{project.desc}</p>
               <h6>{project.year}</h6>
               <div className="w-full flex flex-row justify-center items-center ">
                 {project.githubLink && (
-                  <a href={project.githubLink}>
+                  <a href={project.githubLink} target="_blank">
                     <img
                       src={project.logos?.github}
                       alt="github logo and link to project"
@@ -98,22 +98,22 @@ const ProjectCard = () => {
                   </a>
                 )}
                 {project.applestoreLink && project.googlestoreLink && (
-                  <>
+                  <section className="flex flex-row items-center justify-evenly w-full">
                     <a href={project.applestoreLink} target="_blank">
                       <img
                         src={project.logos?.appstore}
                         alt={`Link to ${project.name} on App Store`}
-                        className="w-20 hover:scale-110 duration-150 "
+                        className="w-28 hover:scale-110 duration-150 "
                       />
                     </a>
                     <a href={project.googlestoreLink} target="_blank">
                       <img
                         src={project.logos?.googleStore}
                         alt={`Link to ${project.name} on Google Play Store`}
-                        className="w-20 hover:scale-110 duration-150"
+                        className="w-28 hover:scale-110 duration-150"
                       />
                     </a>
-                  </>
+                  </section>
                 )}
               </div>
             </section>
