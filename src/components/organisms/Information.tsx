@@ -20,16 +20,18 @@ const Information = () => {
             Fullstack Developer
           </h2>
         </div>
-        <p className=" text-lg text-white">
+        <p className=" text-lg text-white py-2">
           Drummer turned developer. I have a Bachelors of Fine Arts from the
-          Royal College of music in Stockholm. Sometime along my music studies,
-          I realised that lifestyle wasn't for me, though I still love music. I
-          also spend some of my free time in the drum-shed :). After a year of
-          trying the freelance life, I decided to study a vocational program to
-          become a Fullstack Developer, and now work at Staccs, where I mainly
-          develop the app{' '}
+          Royal College of music in Stockholm. After a year of trying the
+          freelance life, I decided to study a vocational program to become a
+          Fullstack Developer, and now work at Staccs, where I mainly develop
+          the app{' '}
           <a href="">
-            <span className="font-bold">Tevefy</span>.
+            <span className="relative font-bold group">
+              Tevefy
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </span>
+            {'.'}
           </a>
         </p>
         <Button

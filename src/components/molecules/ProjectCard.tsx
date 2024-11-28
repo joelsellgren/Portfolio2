@@ -1,13 +1,15 @@
 import githubLogo from '/github-mark.svg';
 import googleStoreLogo from '/googlestorelogo.png';
 import appStoreLogo from '/appstorelogo.svg';
+import tevefyLogo from '/tevefylogo.png';
+import greenheroLogo from '/greenhero.png';
 
 interface IProject {
   name: string;
   company?: string;
   desc: string;
   year: string;
-  images?: string[];
+  image?: string;
   githubLink?: string;
   applestoreLink?: string;
   googlestoreLink?: string;
@@ -17,9 +19,9 @@ const ProjectCard = () => {
   const projects: IProject[] = [
     {
       name: 'Tevefy',
-      desc: 'Tevefy is a video streaming platform for FAST TV Channels.',
+      desc: `Tevefy is a video streaming platform for FAST-TV Channels.`,
       year: '2024',
-      images: [],
+      image: tevefyLogo,
       applestoreLink: 'https://apps.apple.com/se/app/tevefy/id6478608446',
       googlestoreLink:
         'https://play.google.com/store/apps/details?id=com.sebson.tevefy_mobile&hl=sv',
@@ -30,7 +32,7 @@ const ProjectCard = () => {
     },
     {
       name: 'Recipe Assistant App',
-      desc: 'A fullstack project using TypeScript, Vue.js, PostgreSQL, Prisma and ChatGPT:s API to create a chat-bot that helped the user create recipes based on the ingredients they have at home.',
+      desc: 'A fullstack project using TypeScript, Vue.js, PostgreSQL, Prisma and ChatGPT:s API',
       year: '2023',
       githubLink: 'https://github.com/Crewiz/FullstackVue',
       logos: {
@@ -39,9 +41,10 @@ const ProjectCard = () => {
     },
     {
       name: 'Green Hero',
-      desc: 'This project got 3rd place in Chas Academy:s Chas Challenge, the teams were assigned to create an app based on the theme Environment. The project was done using TypeScript, React, express.js and mongoDB.',
+      desc: 'The project was done using TypeScript, React, express.js and mongoDB.',
       year: '2022',
-      githubLink: 'https://github.com/Crewiz/FullstackVue',
+      image: greenheroLogo,
+      githubLink: 'https://github.com/joelsellgren/chaschallenge',
       logos: {
         github: githubLogo,
       },
@@ -80,43 +83,56 @@ const ProjectCard = () => {
       <article className="grid grid-cols-3 gap-10 mt-8">
         {projects.map((project, index) => {
           return (
-            <section
-              key={index}
-              className="w-72 h-80 rounded-2xl p-4 flex flex-col justify-around items-center bg-white  " // hover:scale-110 duration-100
-            >
-              <h2 className="text-lg font-bold">{project.name}</h2>
-              <p>{project.desc}</p>
-              <h6>{project.year}</h6>
-              <div className="w-full flex flex-row justify-center items-center ">
-                {project.githubLink && (
-                  <a href={project.githubLink} target="_blank">
+            <>
+              <section
+                key={index}
+                className="w-72 h-80  rounded-2xl flex flex-col justify-around items-center  " // hover:scale-110 duration-100
+              >
+                <section className="h-28 w-72 rounded-t-2xl bg-green-300 p-4 flex justify-center">
+                  {project.image && (
                     <img
-                      src={project.logos?.github}
-                      alt="github logo and link to project"
-                      className="w-10 hover:scale-110 duration-150"
+                      src={project.image}
+                      alt="project logo"
+                      className="w-20 rounded-2xl"
                     />
-                  </a>
-                )}
-                {project.applestoreLink && project.googlestoreLink && (
-                  <section className="flex flex-row items-center justify-evenly w-full">
-                    <a href={project.applestoreLink} target="_blank">
-                      <img
-                        src={project.logos?.appstore}
-                        alt={`Link to ${project.name} on App Store`}
-                        className="w-28 hover:scale-110 duration-150 "
-                      />
-                    </a>
-                    <a href={project.googlestoreLink} target="_blank">
-                      <img
-                        src={project.logos?.googleStore}
-                        alt={`Link to ${project.name} on Google Play Store`}
-                        className="w-28 hover:scale-110 duration-150"
-                      />
-                    </a>
-                  </section>
-                )}
-              </div>
-            </section>
+                  )}
+                </section>
+                <section className="h-52 w-72 rounded-b-2xl bg-red-300 p-4 flex flex-col justify-around items-center">
+                  <h2 className="text-lg font-bold">{project.name}</h2>
+                  <p>{project.desc}</p>
+                  <h6>{project.year}</h6>
+                  <div className="w-full flex flex-row justify-center items-center ">
+                    {project.githubLink && (
+                      <a href={project.githubLink} target="_blank">
+                        <img
+                          src={project.logos?.github}
+                          alt="github logo and link to project"
+                          className="w-10 hover:scale-110 duration-150"
+                        />
+                      </a>
+                    )}
+                    {project.applestoreLink && project.googlestoreLink && (
+                      <section className="flex flex-row items-center justify-evenly w-full">
+                        <a href={project.applestoreLink} target="_blank">
+                          <img
+                            src={project.logos?.appstore}
+                            alt={`Link to ${project.name} on App Store`}
+                            className="w-28 hover:scale-110 duration-150 "
+                          />
+                        </a>
+                        <a href={project.googlestoreLink} target="_blank">
+                          <img
+                            src={project.logos?.googleStore}
+                            alt={`Link to ${project.name} on Google Play Store`}
+                            className="w-28 hover:scale-110 duration-150"
+                          />
+                        </a>
+                      </section>
+                    )}
+                  </div>
+                </section>
+              </section>
+            </>
           );
         })}
       </article>
