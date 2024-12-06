@@ -1,14 +1,14 @@
-import Button from '../molecules/Button';
-import { useState, useEffect } from 'react';
+import Button from '../molecules/Button'
+import { useState, useEffect } from 'react'
 
 const Information = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsVisible(true), 100);
+    const timeout = setTimeout(() => setIsVisible(true), 100)
 
-    return () => clearTimeout(timeout);
-  }, []);
+    return () => clearTimeout(timeout)
+  }, [])
   return (
     <div className="flex flex-row items-center justify-center h-screen ">
       <div
@@ -27,9 +27,9 @@ const Information = () => {
           Fullstack Developer, and now work at Staccs, where I mainly develop
           the app{' '}
           <a href="">
-            <span className="relative font-bold group">
+            <span className="relative font-bold group hover:text-green-400 duration-100">
               Tevefy
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
             </span>
             {'.'}
           </a>
@@ -42,7 +42,7 @@ const Information = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Information;
+export default Information

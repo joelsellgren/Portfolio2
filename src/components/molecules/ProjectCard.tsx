@@ -1,19 +1,19 @@
-import githubLogo from '/github-mark.svg';
-import googleStoreLogo from '/googlestorelogo.png';
-import appStoreLogo from '/appstorelogo.svg';
-import tevefyLogo from '/tevefylogo.png';
-import greenheroLogo from '/greenhero.png';
+import githubLogo from '/github-mark.svg'
+import googleStoreLogo from '/googlestorelogo.png'
+import appStoreLogo from '/appstorelogo.svg'
+import tevefyLogo from '/tevefylogo.png'
+import greenheroLogo from '/greenhero.png'
 
 interface IProject {
-  name: string;
-  company?: string;
-  desc: string;
-  year: string;
-  image?: string;
-  githubLink?: string;
-  applestoreLink?: string;
-  googlestoreLink?: string;
-  logos?: { github?: string; googleStore?: string; appstore?: string };
+  name: string
+  company?: string
+  desc: string
+  year: string
+  image?: string
+  githubLink?: string
+  applestoreLink?: string
+  googlestoreLink?: string
+  logos?: { github?: string; googleStore?: string; appstore?: string }
 }
 const ProjectCard = () => {
   const projects: IProject[] = [
@@ -41,7 +41,7 @@ const ProjectCard = () => {
     },
     {
       name: 'Green Hero',
-      desc: 'The project was done using TypeScript, React, express.js and mongoDB.',
+      desc: 'A fullstack project using TypeScript, React, express.js and mongoDB.',
       year: '2022',
       image: greenheroLogo,
       githubLink: 'https://github.com/joelsellgren/chaschallenge',
@@ -76,7 +76,7 @@ const ProjectCard = () => {
         github: githubLogo,
       },
     },
-  ];
+  ]
 
   return (
     <>
@@ -133,11 +133,11 @@ const ProjectCard = () => {
                 </section>
               </section>
             </>
-          );
+          )
         })}
       </article>
     </>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
