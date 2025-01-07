@@ -1,5 +1,5 @@
-import Information from '../organisms/Information';
-import Picture from '../molecules/Picture';
+import Information from './Information';
+import Picture from '../Hero/Picture';
 
 const About = () => {
   return (

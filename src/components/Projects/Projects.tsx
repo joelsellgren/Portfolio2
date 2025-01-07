@@ -1,4 +1,4 @@
-import ProjectDetails from '../organisms/ProjectDetails';
+import ProjectDetails from './ProjectDetails';
 
 const Projects = () => {
   return (

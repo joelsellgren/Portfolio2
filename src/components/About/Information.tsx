@@ -1,4 +1,4 @@
-import Button from '../molecules/Button'
+import Button from '../Buttons/Button'
 import { useState, useEffect } from 'react'
 
 const Information = () => {

@@ -1,6 +1,6 @@
-import Hero from '../organisms/Hero';
-import Picture from '../molecules/Picture';
-import { useRouteContext } from '../../Contexts/RouteContext';
+import Hero from './Hero/Hero';
+import Picture from './Hero/Picture';
+import { useRouteContext } from '../Contexts/RouteContext';
 
 const Home = () => {
   const { previousRoute } = useRouteContext();

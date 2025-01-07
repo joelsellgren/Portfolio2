@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Button from '../molecules/Button';
+import Button from '../Buttons/Button';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);

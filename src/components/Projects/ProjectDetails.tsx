@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ProjectCard from '../molecules/ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const ProjectDetails = () => {
   const [isVisible, setIsVisible] = useState(false);
